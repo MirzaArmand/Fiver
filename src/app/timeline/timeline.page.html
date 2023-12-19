@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Timeline
+    </ion-title>
+     <!-- <ion-icon name="search-outline"></ion-icon>  -->
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content>
+  <ion-item>
+    <ion-textarea rows="2" placeholder="Write your post here" [(ngModel)]="newPost.caption"></ion-textarea>
+  </ion-item>
+  <ion-button expand="block" (click)="addPost()">Add Post</ion-button>
+
+
+  <!-- <ion-list lines="none">
+    <ion-item *ngFor="let post of timelinePosts">
+      <ion-avatar slot="start">
+        <img [src]="post.avatar" alt="User Avatar">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ post.username }}</h2>
+        <p>{{ post.caption }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list> -->
+
+
+  <ion-list lines="none">
+    <ion-item *ngFor="let post of timelinePosts">
+      <ion-avatar slot="start">
+        <img [src]="post.avatar" alt="User Avatar">
+      </ion-avatar>
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="auto">
+              <h2>{{ post.username }}</h2>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <ion-img [src]="post.image" style="width: 200px; height: 150px;"></ion-img>
+              <!-- <p *ngIf="!post.isNewPost">{{ post.caption }}</p>
+              <p *ngIf="post.isNewPost && post.caption">{{ post.caption }}</p> -->
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="auto">
+              <p>{{ post.caption }}</p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="auto">
+              <ion-icon [name]= "post.liked ? 'heart' : 'heart-outline'" (click)="toggleLike(post)"></ion-icon>
+              {{ post.likes }}
+            </ion-col>
+            <ion-col size="auto">
+              <ion-icon name="chatbubble-outline"></ion-icon>
+              {{ post.comments }}
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+
+

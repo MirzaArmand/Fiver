@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'FoodGuard-map',
+  appName: 'Foodguard',
   webDir: 'www',
   server: {
     androidScheme: 'https'

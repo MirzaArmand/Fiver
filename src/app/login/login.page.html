@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Foodguard
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="ion-padding">
+  <div class="login-container">
+    <ion-img class="FoodGuardlogo" src="assets/image/logo.jpg"></ion-img>
+    <p> Welcome Back to FoodGuard: </p>
+    <p>The Food Safety & Hygiene Mobile App is your essential guide to raising awareness about safe food practices.</p>
+
+    <ion-item lines="none" class="input-item">
+      <ion-input placeholder="Username" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" class="input-item">
+      <ion-input placeholder="Password" type="password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" (click)="login()">Log In</ion-button>
+
+    <!-- <div class="separator">
+      <span class="separator-text">OR</span>
+    </div> -->
+
+    <!-- <ion-button expand="full" class="login-with-facebook-button">Log In with Facebook</ion-button> -->
+
+    <div class="forgot-password">
+      <a href="#">Forgot password?</a>
+    </div>
+  </div>
+</ion-content>

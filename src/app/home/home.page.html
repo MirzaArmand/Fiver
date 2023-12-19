@@ -1,11 +1,26 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Restaurant Map
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div #map id = "map"></div>
+
+<ion-content>
+  <!-- <div class="home-container"> -->
+   <!-- <ion-img class="FoodGuardlogo" src="assets/image/logo.jpg"></ion-img> -->
+    <!-- <p> Welcome Back to FoodGuard: </p> -->
+    <!-- <p>The Food Safety & Hygiene Mobile App is your essential guide to raising awareness about safe food practices.</p> -->
+  <!-- </div> -->
+  <div class="home-content">
+    <h2>Welcome Back to FoodGuard!</h2>
+    <p>The Food Safety & Hygiene Mobile App is your essential guide to raising awareness about safe food practices.</p>
+    <!-- <p>Click the button below to navigate to the Timeline Page.</p> -->
+    <!-- <ion-button expand="block" (click)="goToTimeline()">Go to Timeline</ion-button> -->
+    <!-- <p>Click the button below to navigate to the Login Page.</p>  -->
+    <ion-button expand="block" (click)="goToLogin()">Go to Login </ion-button>
+  </div>
 </ion-content>
+
+
