@@ -1,11 +1,25 @@
-<ion-header [translucent]="true">
+<!-- src/app/home/home.page.html -->
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Restaurant Map
+      Food Guard
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div #map id = "map"></div>
+<ion-content>
+  <ion-card>
+   
+    <ion-card-content>
+      Welcome to FoodGuard!
+      <!-- External link as a button -->
+<!--ion-button href="https://ionicframework.com/" target="_blank">Visit Ionic</ion-button-->
+
+<!-- Internal link as a button --><br>
+<ion-button (click)="navigateToSignUp()">Go to Sign Up</ion-button> <br>
+<ion-button (click)="navigateToList()"> Cafes and Restaurants in UTM </ion-button>
+
+<br>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -1,0 +1,94 @@
+
+<!-- src/app/dropdown-columns/dropdown-columns.page.html -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center" style="display: flex; justify-content: center; align-items: center;">
+      List of Cafes and Restaurants in UTM. 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br><br>
+  <!-- First Row -->
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <div class="dropdown">
+        <button class="dropbtn">ARKED MERANTI</button>
+        <div class="dropdown-content">
+          <router-outlet>
+          <a href="#">LEMON TREE</a>
+          <!-- Correct path -->
+          <a [routerLink]="['/richiamo-coffee']">RICHIAMO COFFEE</a>
+
+          <a href="#">THE BANGKOK TERMINAL</a>
+        </router-outlet>
+        </div>
+      </div>
+    </div>
+
+    <div class="column" style="background-color:#bbb;">
+      <div class="dropdown">
+        <button class="dropbtn">ARKED CENGAL</button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Row -->
+  <div class="row">
+    <div class="column" style="background-color:#bbb;">
+      <div class="dropdown">
+        <button class="dropbtn">ARKED ANGKASA</button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="column" style="background-color:#aaa;">
+      <div class="dropdown">
+        <button class="dropbtn">ARKED LESTARI</button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3rd Row -->
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <div class="dropdown">
+        <button class="dropbtn">ARKED KDSE</button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="column" style="background-color:#bbb;">
+      <div class="dropdown">
+        <button class="dropbtn">ARKED KP</button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</ion-content>

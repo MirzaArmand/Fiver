@@ -1,7 +1,5 @@
 {
-  "name": "FoodGuard-map",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular-standalone"
+  "name": "myApp",
+  "integrations": {},
+  "type": "angular"
 }

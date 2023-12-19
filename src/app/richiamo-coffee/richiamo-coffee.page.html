@@ -1,0 +1,30 @@
+<ion-content class="ion-padding">
+  <ion-img src="assets/images/richiamo.jpg"></ion-img>
+
+  <ion-card *ngIf="selectedSection !== null">
+    <ion-card-header>
+      {{ selectedSection.name }}
+    </ion-card-header>
+
+    <ion-card-content *ngIf="!selectedSection.isEditMode">
+      <p>{{ selectedSection.content }}</p>
+      <ion-button expand="full" (click)="toggleEditMode(selectedSection)">
+        Edit
+      </ion-button>
+    </ion-card-content>
+
+    <ion-item *ngIf="selectedSection.isEditMode">
+      <ion-label>{{ selectedSection.name }}</ion-label>
+      <ion-select [(ngModel)]="selectedSection.content" placeholder="Select Grade">
+        <ion-select-option value="NO GRADE">NO GRADE</ion-select-option>
+        <ion-select-option value="A">A</ion-select-option>
+        <ion-select-option value="B">B</ion-select-option>
+        <ion-select-option value="C">C</ion-select-option>
+      </ion-select>
+
+      <ion-button expand="full" (click)="saveGrades()">
+        Save
+      </ion-button>
+    </ion-item>
+  </ion-card>
+</ion-content>

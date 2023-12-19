@@ -1,0 +1,24 @@
+// ion-img {
+//     width: 200px !important;
+//     height: 150px !important;
+//   }
+
+  /* src/app/editable-page/editable-page.page.scss */
+
+  ion-img {
+    width: 100%;
+    height: 100%;
+    margin: auto; /* Center the image horizontally */
+  }
+
+ion-card {
+  border: 2px solid #ecf0f1;
+}
+
+ion-card-content {
+  font-style: italic;
+}
+
+ion-textarea {
+  border: 1px solid #bdc3c7;
+}
